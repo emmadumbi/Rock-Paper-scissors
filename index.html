@@ -11,20 +11,21 @@
       <h1>Rock Paper Scissors</h1>
       <div class="move-btn-wraper">
         <button class="move-Btn" id="rockBtn">
-          <img src="imgs/rock.jpg" alt="rock" />
+          <img src="imgs/rock.png" alt="rock">
         </button>
         <button class="move-Btn" id="paperBtn">
-          <img src="imgs/paper.jpg" alt="paper" />
+          <img src="imgs/paper.png" alt="paper"/>
         </button>
         <button class="move-Btn" id="scissorsBtn">
-          <img src="imgs/scissors.jpg" alt="scissors" />
+          <img src="imgs/scissors.png" alt="scissors"/>
         </button>
       </div>
-      <p class="result-para" id="resultEl"></p>
+      <h2 class="result-para" id="resultEl"></h2>
       <div class="moves"></div>
-      <p id="scoreEl" class="scores"></p>
+      <div id="scoreEl" class="scores"></div>
       <div class="reset-btn-div">
         <button class="reset-btn" id="resetBtn">Reset Score</button>
+        <button class="autoplay-btn" id="autoplay" onclick="autoPlay()">Auto Play</button>
       </div>
     </main>
     <script src="script.js"></script>

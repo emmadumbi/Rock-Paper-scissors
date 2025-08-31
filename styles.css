@@ -17,76 +17,62 @@ body {
 main {
   width: min(100% - 5%, 1000px);
   margin-inline: auto;
-  padding: 1rem;
-}
-
-h1 {
-  font-size: 1.9rem;
-  margin-block-end: 1em;
-  text-align: center;
+  /*padding: 1rem;*/
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   object-fit: cover;
-  border-radius: inherit;
-  aspect-ratio: 1/1;
 }
 
-.move-btn-wraper {
+h1{
+  margin-bottom: 0.5em;
+}
+
+.move-btn-wraper{
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
+  gap: 1em;
+  margin-bottom: 2em;
 }
 
 .move-Btn {
-  display: flex;
-  align-items: center;
+  border: none;
+  width: 20%;
+  background-color: black;
+  padding: 1em;
+  border: 1px solid white;
   border-radius: 50%;
-  width: 6rem;
-  background-color: transparent;
-  border: 3px solid white;
-  cursor: pointer;
-}
-
-.result-para {
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin-block-start: 2em;
-  margin-block-end: 1em;
-  letter-spacing: 0.1em;
-  text-align: center;
+  
 }
 
 .moves {
+  max-width: 10%;
   display: flex;
-  justify-content: center;
+  gap: 1em;
+  margin-block: 1.5em;
+  font-size: 20px;
 }
 
-.moves span {
-  width: 6rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.3em;
-  margin-block-start: 1em;
-  margin-block-end: 2em;
-  padding: 0.5em;
-  border-radius: 50%;
+.scores {
+  font-size: 18px;
   font-weight: bold;
-  font-size: 1.2rem;
+  margin-bottom: 1em;
 }
 
-.scores,
-.reset-btn-div {
-  display: flex;
-  justify-content: center;
-}
-
-.reset-btn {
+.reset-btn,
+.autoplay-btn{
+  padding-block: 0.5em;
+  padding-inline: 1.5em;
+  font-size: 0.88rem;
+  border-radius: 1em;
   border: none;
-  padding: 0.5em 1em;
-  margin-block-start: 1.2em;
-  cursor: pointer;
+  color: whitesmoke;
+}
+
+.reset-btn{
+  background: darkred;
+}
+
+.autoplay-btn{
+  background: green;
 }
