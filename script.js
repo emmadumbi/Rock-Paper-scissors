@@ -94,7 +94,7 @@ const compareMove = function(playerMove) {
   // if both moves are the same
   else if (playerMove === "scissors") {
     if (computerMove === "paper") {
-      result = "You Win";
+      result = "You win";
     }
     // if computer move is different
     else if (computerMove === "scissors") {
@@ -104,7 +104,7 @@ const compareMove = function(playerMove) {
     }
   }
   
-  if (result === "You Win") {
+  if (result === "You win") {
     score.wins += 1;
   } else if (result === "You Lose") {
     score.losses += 1;
