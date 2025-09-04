@@ -36,7 +36,6 @@ const autoPlay = () => {
       const playerMove = getComputerMove();
       compareMove(playerMove)
     }, 2000);
-    console.log(intervalId)
     isAutoPlaying = true;
   } else {
     clearInterval(intervalId);
@@ -45,6 +44,7 @@ const autoPlay = () => {
   autoplayBtn.textContent = isAutoPlaying ? "Auto Playing" : "Auto Play";
 };
  
+ autoplayBtn.addEventListener("click",autoPlay);
  
 // function to determine computer's move
 const getComputerMove = function() {
